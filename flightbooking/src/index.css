@@ -1,0 +1,139 @@
+/* Global styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+  
+  /* Modern background setup */
+  background-image: url('./images/flight3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* Dark overlay for text readability */
+  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  
+  /* Smooth transition effect */
+  transition: background-color 0.3s ease; /* Only animate the background-color */
+}
+
+h1 {
+  text-align: center;
+  margin: 40px;
+  color: #0b0e10;
+  font-size: 2.5rem;
+}
+
+nav {
+  background-color: #3498db8e;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 25px;
+}
+
+nav ul li a {
+  color: rgb(25, 23, 22);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f39c12; /* Gold */
+  text-decoration: underline;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  padding: 120px 0 100px 20px; /* Reduced top padding */
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 50px; /* Increased padding to make the box larger */
+  min-width: 400px; /* Increased min-width for a larger box */
+  transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+}
+
+h2 {
+  color: #34495e;
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+/* Adjusted spacing for form elements */
+.form-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 200px; /* Adds spacing between form fields */
+  margin: 20px auto;
+  width: 80%; /* Adjust width for better layout */
+  
+  /* Set background image for the entire container */
+  background-image: url('/src/images/flight2.png'); /* Relative path to your image */
+  background-size: cover; /* Make the image cover the container */
+  background-position: center; /* Center the image within the container */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  padding: 20px; /* Optional padding for spacing */
+  border-radius: 10px; /* Optional: rounded corners for the container */
+}
+
+
+/* Styling for input, select, and button elements */
+.form-container input,
+.form-container select,
+.form-container button {
+  
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #282525;
+  width: 100%; /* Ensure they span full width */
+}
+
+/* Styling for the button */
+.form-container button {
+  padding: 12px; /* Adjust button padding */
+}
+
+
+button {
+  background-color: #5fc187;
+  color: rgb(0, 0, 0);
+  padding: 8px 25px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5eb984;
+}
+
+button:focus {
+  outline: none;
+}
